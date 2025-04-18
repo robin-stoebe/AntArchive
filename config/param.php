@@ -1,2 +1,0 @@
-//'authenticationType' => 'ICSLDAP',   
-'authenticationType' => 'shibboleth',
