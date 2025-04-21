@@ -4,9 +4,9 @@ return [
     'adminEmail' => 'admin@example.com',
 
     'authTimeout' => 3600,
-    //'authenticationType' => 'ICSLDAP',
+    'authenticationType' => 'ICSLDAP',
     //'authenticationType' => 'WebAuth',
-    'authenticationType' => 'shibboleth',
+    //'authenticationType' => 'shibboleth',
 
     'minimum' => 3,
 ];
