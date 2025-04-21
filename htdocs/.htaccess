@@ -1,0 +1,10 @@
+RewriteEngine On
+RewriteBase /blank-yii2-shib/
+RewriteRule ^$ web/
+RewriteCond %{REQUEST_FILENAME} !f
+RewriteCond %{REQUEST_FILENAME} !d
+RewriteRule ^(.*)$ web/$1
+
+AuthType shibboleth
+ShibRequestSetting requireSession false
+Require shibboleth

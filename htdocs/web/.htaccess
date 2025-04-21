@@ -1,0 +1,15 @@
+RewriteEngine on
+RewriteBase /blank-yii2-shib/web/
+
+# If a directory or a file exists, use it directly
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Otherwise forward it to index.php
+RewriteRule . index.php
+
+AuthType shibboleth
+ShibRequestSetting requireSession false
+Require shibboleth
+
+
