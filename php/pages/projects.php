@@ -800,5 +800,4 @@ $levels = ['Undergraduate', 'Graduate'];
         }
     });
 </script>
-</body>
-</html> 
+
