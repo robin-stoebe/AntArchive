@@ -13,11 +13,12 @@ include_once 'includes/auth.php';
 $page = isset($_GET['page']) ? $_GET['page'] : 'home';
 
 // Check if certain pages require authentication
-if ($page === 'admin' || $page === 'admin-news') {
+if (in_array($page, ['admin', 'admin-news', 'admin-approve-deny', 'admin-user-management'])) {
     requireAdmin();
-} elseif ($page === 'professor' || $page === 'professor-project') {
+} elseif (in_array($page, ['professor', 'professor-project'])) {
     requireProfessor();
 }
+
 
 // Special handling for login page
 if ($page === 'login') {
@@ -51,6 +52,12 @@ switch ($page) {
     case 'admin-news':
         include_once 'pages/admin-news.php';
         break;
+    case 'admin-approve-deny':
+        include_once 'pages/admin-approve-deny.php';
+        break;
+     case 'user-management':               
+        include_once 'pages/admin-user-management.php';
+    break;
     case 'professor':
         include_once 'pages/professor.php';
         break;

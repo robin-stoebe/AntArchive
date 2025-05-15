@@ -19,6 +19,7 @@
         }
     </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body class="min-h-screen flex flex-col">
     <header class="bg-[#4b84c7] text-white py-6 px-6">

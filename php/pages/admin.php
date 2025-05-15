@@ -60,31 +60,32 @@ $recentActivity = [
                     </div>
                 </a>
 
-                <!-- Manage Projects Card -->
-                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow cursor-pointer">
-                    <div class="flex items-start">
-                        <div class="bg-blue-100 p-3 rounded-full mr-4 flex items-center justify-center w-12 h-12">
-                            <i class="fas fa-file-alt text-blue-600"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-lg font-semibold mb-2">Manage Projects</h3>
-                            <p class="text-gray-600">Add, edit, or remove projects from the archive.</p>
-                        </div>
+                <!-- Manage Projects Card (now a link) -->
+            <a href="index.php?page=admin-approve-deny" class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow block">
+                <div class="flex items-start">
+                    <div class="bg-blue-100 p-3 rounded-full mr-4 flex items-center justify-center w-12 h-12">
+                        <i class="fas fa-file-alt text-blue-600"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold mb-2">Manage Projects</h3>
+                        <p class="text-gray-600">Add, edit, or remove projects from the archive.</p>
                     </div>
                 </div>
+            </a>
+
 
                 <!-- User Management Card -->
-                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow cursor-pointer">
-                    <div class="flex items-start">
-                        <div class="bg-green-100 p-3 rounded-full mr-4 flex items-center justify-center w-12 h-12">
-                            <i class="fas fa-users text-green-600"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-lg font-semibold mb-2">User Management</h3>
-                            <p class="text-gray-600">Manage professors, students, and admin accounts.</p>
-                        </div>
+            <a href="index.php?page=user-management" class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow block">
+                <div class="flex items-start">
+                    <div class="bg-green-100 p-3 rounded-full mr-4 flex items-center justify-center w-12 h-12">
+                        <i class="fas fa-users text-green-600"></i>
                     </div>
+                    <div>
+                        <h3 class="text-lg font-semibold mb-2">User Management</h3>
+                        <p class="text-gray-600">Manage professors, students, and admin accounts.</p>
+                     </div>
                 </div>
+            </a>
 
                 <!-- News & Events Management Card -->
                 <a href="index.php?page=admin-news" class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
