@@ -1,6 +1,7 @@
 <?php
 // pages/admin-approve-deny.php
 $pageTitle   = 'Activity Review';
+$searchTerm  = $_GET['search'] ?? '';
 $currentSort = isset($_GET['sort'])   ? $_GET['sort']   : 'alphabetical';
 
 $allProjects = [  
