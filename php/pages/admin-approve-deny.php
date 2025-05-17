@@ -43,7 +43,9 @@ $showingTo   = min($total, $startIndex + $perPage);
 
 ?>
 
-<main class="content">
+
+<main class="min-h-screen flex flex-col">
+  <div class="flex-1 bg-gray-50 pt-12">
   <div class="max-w-7xl mx-auto px-4">
     <div class="-mt-2 mb-4">
       <a href="index.php?page=admin" class="inline-flex items-center text-[#4b84c7] hover:underline text-sm font-medium">
@@ -137,6 +139,7 @@ $showingTo   = min($total, $startIndex + $perPage);
         </div>
       </div>
     </div>
+  </div>
   </div>
 </main>
 
